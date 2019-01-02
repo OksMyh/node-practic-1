@@ -56,7 +56,7 @@ let server = http.createServer((req, res) => {
         }
         case '/info': {
             // console.log(parsedUrl.query);
-            res.end(JSON.stringify(parsedUrl.query));
+            res.end(`User with name  ${parsedUrl.query.name} and password * ${parsedUrl.query.password} * is registered`);
             break;
         }
         default:{
